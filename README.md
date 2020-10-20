@@ -1,6 +1,4 @@
-# Flutter
-
-## Dart
+# Dart ❤️ 
 
 **¿Porque Dart?**
 
@@ -39,16 +37,15 @@ Dart funciona con tipos de datos, el valor por defecto de una variable es Null. 
 * Numeros decimales `double`
 * Cadena de texto `String`
 * Booleano `bool`
-  
 * La mayoria del codigo es por clases
 
-```
+```dart
 class Heroe {}
 ```
 
 * Y lo tratamos como objetos
 
-```
+```dart
 var spiderman = new Heroe();
 var ironman = Heroe();
 ```
@@ -57,7 +54,7 @@ var ironman = Heroe();
 * Para imprimir algo `print('Hola Mundo');`. Para imprimir numeros, por ejemplo, la variable "Empleados" hacemos lo siguiente -> `print('$Empleados')`.
 * Para **comentar** con `//` o  `/* */` para multilinea.
 * Los **condicionales** If son de la siguiente forma
-  ```
+  ```dart
   if (activado) {}
   else{}
   ```
@@ -78,7 +75,7 @@ Son pares de valores. Llave y valor. Es conocido tambien como un diccionario de 
 
 * Crear un Map dinamico (La key y el valor pueden ser de cualquier tipo ->
 
-```
+```dart
 Map persona = {
 'nombre' : 'Denisse',
 'edad' : 22,
@@ -88,7 +85,7 @@ Map persona = {
 
 * Crear un Map y definir los tipos de key y valor (En este caso, la key sera siempre un String y el valor puede ser cualquier cosa, es decir, dinamico) ->
   
-  ```
+  ```dart
   Map<String, dynamic> persona = {
   'nombre' : 'Juan',
   'soltero' : false
