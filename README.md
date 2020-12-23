@@ -20,7 +20,7 @@ Fue creado por Google al igual que Flutter.
 
 ### Cómo luce un codigo en Dart?
 
-Hay un main que es el entry point de la aplicacion. Main por lo general no retorna nada, por eso es void. 
+Hay un main que es el entry point de la aplicacion. Main por lo general no retorna nada, por eso es void.
 
 ```dart
 void main(){
@@ -54,9 +54,20 @@ var ironman = Heroe();
 
 Dart usa punto y coma para finalizar las instrucciones.
 
-Para imprimir algo `print('Hola Mundo');`. Para imprimir numeros, por ejemplo, la variable "Empleados" hacemos lo siguiente -> print()
+Para imprimir algo `print('Hola Mundo');`. 
 
-Para comentar con `//` o  `/* */` para multilinea. 
+Para comentar con `//` o  `/* */` para multilinea.
+
+## Funciones
+
+* Se recomienda evitar las funciones `dynamic`, que son las que no se especifica si son void, o el tipo de dato que devuelven.
+* Cuando los parametros estan entre llaves `({String nombre, String edad})`, son **parametros con nombre**, es decir, debo mandarlos de la siguiente manera `(nombre: 'denu', edad: '39')`
 
 
+## Clases
 
+* Los nombres de las clases deben empezar con mayuscula `class Heroe{}`
+* Podemos omitir el `new` cuando creamos una nueva instancia.
+* Puedo declarar objetos con `final` si no quiero que cambie ninguna propiedad de la instancia.
+* **Metodo** esta dentro de una clase. **Funcion**, fuera de una clase.
+* Si al nombre de las propiedades les pongo un guion bajo `_lado`, seran privadas.
