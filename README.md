@@ -54,7 +54,7 @@ var ironman = Heroe();
 
 Dart usa punto y coma para finalizar las instrucciones.
 
-Para imprimir algo `print('Hola Mundo');`. 
+Para imprimir algo `print('Hola Mundo');`.
 
 Para comentar con `//` o  `/* */` para multilinea.
 
@@ -63,7 +63,6 @@ Para comentar con `//` o  `/* */` para multilinea.
 * Se recomienda evitar las funciones `dynamic`, que son las que no se especifica si son void, o el tipo de dato que devuelven.
 * Cuando los parametros estan entre llaves `({String nombre, String edad})`, son **parametros con nombre**, es decir, debo mandarlos de la siguiente manera `(nombre: 'denu', edad: '39')`
 
-
 ## Clases
 
 * Los nombres de las clases deben empezar con mayuscula `class Heroe{}`
@@ -71,3 +70,20 @@ Para comentar con `//` o  `/* */` para multilinea.
 * Puedo declarar objetos con `final` si no quiero que cambie ninguna propiedad de la instancia.
 * **Metodo** esta dentro de una clase. **Funcion**, fuera de una clase.
 * Si al nombre de las propiedades les pongo un guion bajo `_lado`, seran privadas.
+
+## Mixin
+
+Tenemos la clase animal, de la cuales extienden 3 clases de animales (Mamifero, Pajaro y Pescado), y estas 3 clases poseen X elementos por cada uno , cada uno con distintas habilidades, es decir, algunos pueden nadar, otros volar y otros caminar, independientemente de a que clase de animal pertenezcan.
+
+Por ejemplo, un delfin es un Mamifero, y es nadador
+
+> class Delfin extends Mamifero with Nadador{}
+
+El `with` representa al Mixin.
+
+El Murcielago es un Mamifero, que vuela y camina
+
+> class Murcielago extends Mamifero with Caminante, Volar{}
+
+
+
