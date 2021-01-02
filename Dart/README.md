@@ -1,6 +1,5 @@
-# Flutter
+# Dart
 
-## Dart
 
 **¿Porque Dart?**
 
@@ -85,5 +84,11 @@ El Murcielago es un Mamifero, que vuela y camina
 
 > class Murcielago extends Mamifero with Caminante, Volar{}
 
+## Futures
 
+Es lo mismo que las Promises en JS.
+Es una tarea asincrona que se realiza en un hilo independiente al hilo principal.
+
+* Para usar `await` debo estar dentro de una funcion `async`
+* Los constructores no pueden ser asincronos, es decir `Heroe() async{}` no esta permitido. 
 
